@@ -1,0 +1,4 @@
+# machine
+- add machine learning projects to github
+- add ml projects to web
+
