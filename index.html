@@ -651,6 +651,23 @@ $(document).ready(function(){
   });
 });
 </script>-->
+    <script>
+      (function(d,t) {
+        var BASE_URL="https://app.chatwoot.com";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        g.defer = true;
+        g.async = true;
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.chatwootSDK.run({
+            websiteToken: 'E71hNMZT5k65tG7T2QyXyCDf',
+            baseUrl: BASE_URL
+          })
+        }
+      })(document,"script");
+    </script>
+    
                   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
                   <!--   Core JS Files   -->
                   <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
